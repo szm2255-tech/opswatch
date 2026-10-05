@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "opswatch"
+version = "0.1.0"
+description = "Log analysis, health checks and ticket notes for DevOps support analysts"
+requires-python = ">=3.10"
+readme = "README.md"
+
+[project.scripts]
+opswatch = "opswatch.cli:main"
+
+[tool.setuptools]
+packages = ["opswatch"]
